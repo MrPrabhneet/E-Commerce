@@ -1,0 +1,58 @@
+{% extends 'hf.html' %}
+{% block title %}Collections{% endblock title %}
+{% block mainbody %}
+{% load static %}
+
+<div class="primary">
+    <div class="primary">
+        <a href="{% url "home" %}">Home/ </a>
+        <a href="{% url "Collections" %}"> Collections/ </a>
+        <a href="{% url "Collectionsview" category.slug %}">{{category.name}}</a>
+    </div>
+</div>
+
+<div class="containers">
+    <div class="row">
+        <div class="col-md-12">
+            <h1> {{category.name}} </h1>
+            <div class="row">
+                {% for item in products %}
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="category-image">
+                                    <img src="{{item.product_image.url}}" alt="Products image" />
+                                </div>
+                                <div class="contentBx">
+                                    <h2> {{item.name}} </h2>
+                                    <div class="Size">
+                                        <span class= "op">{{item.original_price}}</span>
+                                        <span class="sp">{{item.selling_price}}</span>
+                                    </div>
+                                    <div class="size">
+                                        <h5>Size: </h5>
+                                        <span>28</span>
+                                        <span>30</span>
+                                        <span>32</span>
+                                        <span>34</span>
+                                    </div>
+                                    <div class="color">
+                                        <h5>Color: </h5>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <a href="{% url "productview" item.category.slug item.slug %}">Buy Now</a>
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %} 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock mainbody %}

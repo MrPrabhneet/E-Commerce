@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.row {
+    /* display: flex; */
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.shadow,
+.Sshadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.card-body,
+.shadow {
+    height: 456.2px;
+    width: 744.4px;
+    line-height: 1.5;
+}
+
+.shadow,
+.Sshadow {
+    padding: 16px 16px 16px 16px;
+}
+
+.Summary-body,
+.Sshadow {
+    /* height: 297.4px; */
+    width: 524.4px;
+    line-height: 1.5;
+    padding-right: 5%;
+}
+
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mt-2 {
+    margin-top: .5rem !important;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    margin: 0 0 8px 0;
+}
+
+.col-md-7 {
+    width: 770px;
+}
+
+.col-md-5 {
+    height: 457.8px;
+    width: 550px;
+}
+
+label {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.col-md-6 {
+    height: 61.6px;
+    width: 368.2px;
+    float: left;
+    width: 50%;
+}
+
+.form-control {
+    height: 38px;
+    width: 345px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+th,
+td {
+    padding: 8px 8px 8px 8px;
+    font-size: 16px;
+    line-height: 24px;
+    display: table-cell;
+    border-collapse: collapse;
+    caption-side: bottom;
+    width: 100%;
+}
+
+th {
+    font-weight: 700;
+    border-bottom: 1px solid #afafaf;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid #DEE2E6;
+    justify-content: space-between;
+}
+
+.td {
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 3%;
+}
+
+.fw-bold {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+.mt-3 {
+    height: 38px;
+    width: 492px;
+    background-color: #198754;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 5px;
+
+}
+
+.w-100 {
+    vertical-align: middle;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For tablets: */
+    .container {
+        width: 100%;
+    }
+
+    .card-body,
+    .shadow {
+        width: 100%;
+    }
+
+    .Summary-body,
+    .Sshadow {
+        width: 100%;
+    }
+
+    .Summary-body,
+    .Sshadow {
+        width: 100%;
+    }
+
+    .col-md-7 {
+        width: 100%;
+    }
+
+    .col-md-5 {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    th,
+    td {
+        width: 100%;
+    }
+
+    .mt-3 {
+        width: 100%;
+    }
+
+    .row {
+        display: block;
+    }
+    .main-body{
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* For desktop: */
+    .card-body,
+    .shadow {
+        width: 100%;
+    }
+
+    .Summary-body,
+    .Sshadow {
+        width: 100%;
+    }
+
+    .Summary-body,
+    .Sshadow {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .col-md-7 {
+        width: 100%;
+    }
+
+    .col-md-5 {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .form-control {
+        width: 95%;
+    }
+
+    th,
+    td {
+        width: 100%;
+    }
+
+    .mt-3 {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
